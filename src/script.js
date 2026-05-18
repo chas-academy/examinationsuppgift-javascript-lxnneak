@@ -27,6 +27,11 @@ function addTransaction(type) {
     expenseList.appendChild(listItem)
     balance -= amount
   }
+
+  balanceDisplay.textContent = balance.toString()
+
+  descInput.value = ""
+  amountInput.value = ""
 }
 
 incomeBtn.addEventListener("click", function () {
